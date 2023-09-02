@@ -1,4 +1,4 @@
-package org.reactive_testing;
+package org.reactive_testing.flux.sec02;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

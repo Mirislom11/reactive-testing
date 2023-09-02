@@ -1,4 +1,4 @@
-package org.reactive_testing;
+package org.reactive_testing.flux.sec02;
 
 import java.util.function.Consumer;
 import org.reactive_testing.util.Util;

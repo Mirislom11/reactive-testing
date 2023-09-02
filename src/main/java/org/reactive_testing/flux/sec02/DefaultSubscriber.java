@@ -1,4 +1,4 @@
-package org.reactive_testing;
+package org.reactive_testing.flux.sec02;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;

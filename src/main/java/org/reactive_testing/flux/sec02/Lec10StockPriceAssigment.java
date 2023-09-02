@@ -1,4 +1,4 @@
-package org.reactive_testing;
+package org.reactive_testing.flux.sec02;
 
 import java.time.LocalDateTime;
 import java.util.concurrent.CountDownLatch;

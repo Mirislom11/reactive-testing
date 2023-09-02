@@ -1,4 +1,4 @@
-package org.reactive_testing.sec01;
+package org.reactive_testing.flux.sec01;
 import org.reactive_testing.NameGenerator;
 import org.reactive_testing.util.Util;
 

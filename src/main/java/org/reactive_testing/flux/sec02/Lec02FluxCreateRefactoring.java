@@ -1,4 +1,4 @@
-package org.reactive_testing;
+package org.reactive_testing.flux.sec02;
 
 import org.reactive_testing.util.Util;
 import reactor.core.publisher.Flux;

@@ -2,8 +2,8 @@ package org.reactive_testing.util;
 
 import com.github.javafaker.Faker;
 import java.util.function.Consumer;
-import javax.swing.DebugGraphics;
-import org.reactive_testing.DefaultSubscriber;
+
+import org.reactive_testing.flux.sec02.DefaultSubscriber;
 import org.reactivestreams.Subscriber;
 
 public class Util {

@@ -1,4 +1,4 @@
-package org.reactive_testing;
+package org.reactive_testing.flux.sec02;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import org.reactive_testing.util.Util;
