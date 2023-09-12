@@ -34,6 +34,14 @@ public class Util {
     }
   }
 
+  public static void sleepMillis (int millis) {
+    try {
+      Thread.sleep(millis);
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
   public static Subscriber<Object> subscriber () {
     return new DefaultSubscriber();
   }
