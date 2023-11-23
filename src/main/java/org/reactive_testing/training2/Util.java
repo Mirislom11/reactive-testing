@@ -35,6 +35,7 @@ public class Util {
   }
 
   public static Subscriber<Object> subscriber () {
+    System.out.println("aaaa");
     return new DefaultSubscriber();
   }
 
