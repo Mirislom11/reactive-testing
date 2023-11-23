@@ -19,7 +19,7 @@ public class Lec02SubscribeOnDemo {
 
     Util.sleepSeconds(5);
 
-    System.out.println("111");
+    System.out.println("ewewewewewewe");
   }
 
   private static void printThreadName (String msg) {
