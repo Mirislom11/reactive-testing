@@ -18,6 +18,8 @@ public class Lec02SubscribeOnDemo {
         .subscribe(v -> printThreadName("sub " + v));
 
     Util.sleepSeconds(5);
+
+    System.out.println("111");
   }
 
   private static void printThreadName (String msg) {
