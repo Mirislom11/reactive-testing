@@ -9,6 +9,7 @@ public class Lec05FluxGenerate {
   public static void main(String[] args) {
     Flux.generate(synchronousSink -> {
       System.out.println("emitting");
+      System.out.println("Thread name: " + Thread.currentThread().getName());
       synchronousSink.next(Util.faker().country().name());
     }).subscribe(Util.subscriber("Syncronous subscriber"));
   }

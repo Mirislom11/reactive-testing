@@ -6,25 +6,23 @@ import org.reactive_testing.util.Util;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;
 
-public class Lec01Demo {
+public class Lec03BackPressureLatest {
 
   public static void main(String[] args) {
     /*System.setProperty("reactor.bufferSize.small", "16");*/
-    List<Object> list = new ArrayList<>();
+    List<Integer> list = new ArrayList<>();
     Flux.create(fluxSink -> {
-          for (int i = 0; i < 1000000; i++) {
-            Util.sleepSeconds(10);
-            System.out.println("Pushed: " + i);
+          for (int i = 0; i < 501; i++) {
             fluxSink.next(i);
+            System.out.println("Pushed: " + i);
           }
         })
         .onBackpressureLatest()
         .publishOn(Schedulers.boundedElastic())
         .doOnNext(i -> {
-          Util.sleepMillis(10);
+          Util.sleepMillis(100);
         }).subscribe(Util.subscriber());
 
-    Util.sleepSeconds(60);
-    System.out.println(list);
+    Util.sleepSeconds(100);
   }
 }
